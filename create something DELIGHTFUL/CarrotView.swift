@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CarrotView.swift
 //  create something DELIGHTFUL
 //
 //  Created by T Krobot on 2/8/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CarrotView: View {
     var body: some View {
         NavigationStack {
             VStack {
@@ -15,16 +15,19 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundStyle(.orange)
                     .padding(.bottom, 5)
-                Text("This is a carrot.")
-                NavigationLink ("A carrot?") {
-                    CarrotView()
+                Text("Do you like the carrot?")
+                    .padding(.bottom, 5)
+                NavigationLink("Yes!") {
+                    CarrotYesView()
+                }
+                NavigationLink("No.") {
+                    CarrotNoView()
                 }
             }
-            .padding()
         }
     }
 }
 
 #Preview {
-    ContentView()
+    CarrotView()
 }
