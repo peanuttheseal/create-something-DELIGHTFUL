@@ -9,7 +9,27 @@ import SwiftUI
 
 struct CarrotNoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Image(systemName: "drop.fill")
+                    .imageScale(.large)
+                    .foregroundStyle(.red)
+                    .padding()
+                Image(systemName: "carrot.fill")
+                    .imageScale(.large)
+                    .foregroundStyle(.red)
+                    .padding()
+                Image(systemName: "wrongwaysign.fill")
+                    .imageScale(.large)
+                    .foregroundStyle(.red)
+                    .padding()
+            }
+            .padding(.bottom, 5)
+            Text("That's incorrect.")
+            Text("You will now be killed.")
+            Text("Is this the end...?")
+                .foregroundStyle(.tint)
+        }
     }
 }
 

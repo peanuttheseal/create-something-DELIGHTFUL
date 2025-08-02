@@ -15,9 +15,10 @@ struct CarrotView: View {
                     .imageScale(.large)
                     .foregroundStyle(.orange)
                     .padding(.bottom, 5)
+                Text("This is a carrot.")
                 Text("Do you like the carrot?")
                     .padding(.bottom, 5)
-                NavigationLink("Yes!") {
+                NavigationLink("YAYAYAYAYAYAYAYAYAYAYAYAYAYAYAYAYAYA") {
                     CarrotYesView()
                 }
                 NavigationLink("No.") {
